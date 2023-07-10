@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearLogin"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        style="@style/groupStylewhite_A700">
+
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_39pxh"
+            android:layout_marginStart="@dimen/_39pxh"
+            android:layout_marginTop="@dimen/_75pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            style="@style/txtOpenSansromanlight40"
+            android:text="@string/app_name"
+            />
+
+        <EditText
+
+            android:id="@+id/emailET"
+            style="@style/editText"
+            android:layout_width="@dimen/_300pxh"
+            android:layout_height="@dimen/_48pxv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_39pxh"
+            android:layout_marginTop="@dimen/_81pxv"
+            android:layout_marginEnd="@dimen/_39pxh"
+            android:background="@drawable/rectangle_bg_indigo_100_radius_15"
+            android:hint="email"
+
+            android:paddingTop="15sp"
+            android:paddingBottom="12sp" />
+
+        <EditText
+            android:id="@+id/passwordET"
+            style="@style/editText"
+            android:layout_width="@dimen/_300pxh"
+            android:layout_height="@dimen/_48pxv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_39pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_marginEnd="@dimen/_39pxh"
+            android:background="@drawable/rectangle_bg_indigo_100_radius_15"
+            android:hint="password"
+            android:paddingTop="15sp"
+            android:paddingBottom="12sp"
+            android:inputType="textPassword"
+            />
+
+        <TextView
+            android:id="@+id/forgotPasswordTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18pxh"
+            android:textSize="17dp"
+            android:text="Forgot ur password?" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginBtn"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_41pxv"
+            android:layout_width="@dimen/_195pxh"
+
+            android:layout_marginEnd="@dimen/_39pxh"
+            android:layout_marginStart="@dimen/_39pxh"
+            android:layout_marginTop="@dimen/_75pxv"
+
+            android:singleLine="true"
+            android:text="@string/lbl_login"
+            android:textAllCaps="false"
+            style="@style/btnSolidRounded"
+            tools:text="@string/lbl_login"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/createAccBtn"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_height="@dimen/_43pxv"
+            android:layout_width="@dimen/_212pxh"
+
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_39pxh"
+            android:layout_marginStart="@dimen/_39pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+
+          android:singleLine="true"
+            android:text="@string/lbl_create_account"
+            android:textAllCaps="false"
+            style="@style/btnSolidRounded"
+            tools:text="@string/lbl_create_account"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

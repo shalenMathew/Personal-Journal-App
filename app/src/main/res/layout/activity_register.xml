@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:id="@+id/linearRegister"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            style="@style/groupStylewhite_A700"
+            >
+
+
+
+
+
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_39pxh"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_marginTop="@dimen/_45pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@string/app_name"
+
+                style="@style/txtOpenSansromanlight40"
+                tools:text="@string/msg_personal_journa"/>
+
+
+
+
+            <EditText
+                android:background="@drawable/rectangle_bg_indigo_100_radius_15"
+                android:ellipsize="end"
+                android:hint="username"
+                android:id="@+id/username_create" android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_39pxh"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_marginTop="@dimen/_69pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_12pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_25pxh"
+                android:paddingTop="@dimen/_14pxv" android:singleLine="true"
+                android:textColorHint="@color/white_A700"
+                style="@style/btnSolidRounded" tools:ignore="Autofill"/>
+
+            <EditText
+                android:id="@+id/email_create"
+                style="@style/btnSolidRounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_39pxh"
+                android:background="@drawable/rectangle_bg_indigo_100_radius_15"
+                android:ellipsize="end"
+                android:hint="email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="@dimen/_25pxh"
+                android:paddingTop="@dimen/_12pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_14pxv"
+
+                android:singleLine="true"
+                android:textColorHint="@color/white_A700"
+                tools:ignore="Autofill" />
+            <EditText
+                android:background="@drawable/rectangle_bg_indigo_100_radius_15"
+                android:ellipsize="end"
+                android:hint="password"
+                android:id="@+id/password_create"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_39pxh"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_13pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_25pxh"
+                android:paddingTop="@dimen/_13pxv" android:singleLine="true"
+                android:textColorHint="@color/white_A700"
+                style="@style/btnSolidRounded"
+                tools:ignore="Autofill"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/registerBtn"
+
+                android:layout_width="@dimen/_195pxh"
+                android:layout_height="@dimen/_43pxv"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_marginTop="@dimen/_82pxv"
+                android:layout_marginEnd="@dimen/_39pxh"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Register"
+                style="@style/btnSolidRounded"
+                android:textAllCaps="false" />
+
+
+
+
+        </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back"
+        android:layout_width="@dimen/_40pxh"
+        android:layout_height="@dimen/_40pxh"
+        android:background="@drawable/back"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_15pxh"
+        android:layout_marginBottom="@dimen/_15pxv"
+        />
+
+    <ProgressBar
+        android:id="@+id/registerProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>

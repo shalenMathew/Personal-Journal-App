@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "454586777368",
+    "project_id": "personaljournal-50b16",
+    "storage_bucket": "personaljournal-50b16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454586777368:android:d08065621c979f20f9286d",
+        "android_client_info": {
+          "package_name": "com.example.personaljournal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454586777368-vc3a1ghrrc4b6em733b8ujqe4i54ego8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.personaljournal",
+            "certificate_hash": "60b06403c8e80307255c9ef6deb71315d75f81c9"
+          }
+        },
+        {
+          "client_id": "454586777368-ut1lfuvrpj205cj85pn570ulkmfnmeit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkMlES3bWgMSRfkfJdlVeljZlQ8k8iU7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454586777368-ut1lfuvrpj205cj85pn570ulkmfnmeit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454586777368:android:7848beb5c2fda18af9286d",
+        "android_client_info": {
+          "package_name": "com.example.personaljournalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454586777368-ut1lfuvrpj205cj85pn570ulkmfnmeit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkMlES3bWgMSRfkfJdlVeljZlQ8k8iU7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454586777368-ut1lfuvrpj205cj85pn570ulkmfnmeit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

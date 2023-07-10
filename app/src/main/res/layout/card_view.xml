@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="15dp"
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linearCardView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        style="@style/groupStyleblack_900"
+        >
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewImg"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_290pxh"
+            android:layout_width="@dimen/_290pxh"
+            android:layout_marginEnd="@dimen/_43pxh"
+            android:layout_marginStart="@dimen/_43pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+
+            app:cardCornerRadius="20dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                >
+
+                <ImageView
+                    android:id="@+id/cardViewImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img3" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <View
+            android:background="@drawable/rectangle_bg_white_a700"
+            android:id="@+id/lineRectangleThree"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_2pxv"
+            android:layout_marginEnd="@dimen/_43pxh"
+            android:layout_marginStart="@dimen/_43pxh"
+            android:layout_marginTop="@dimen/_34pxv"
+            android:layout_width="@dimen/_148pxh"/>
+
+        <TextView
+
+            android:id="@+id/cardviewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_29pxv"
+            android:layout_marginEnd="@dimen/_23pxh"
+
+            android:fontFamily="@font/opensansromanbold"
+            android:padding="5sp"
+            android:text="title"
+            android:textColor="@color/indigo_100"
+            android:textSize="@dimen/_18pxh"
+
+            android:textStyle="italic" />
+
+        <TextView  android:id="@+id/cardviewThoughts"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="6sp"
+            android:text="thoughts"
+            style="@style/txtArimoromanregular18"
+
+         />
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/cardviewTime"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_34pxv"
+            android:layout_marginBottom="@dimen/_8pxh"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="Yesterday"
+            style="@style/txtArimoitalicregular18"
+            />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

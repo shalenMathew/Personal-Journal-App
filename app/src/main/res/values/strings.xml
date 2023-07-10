@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">Personal Journal</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="lbl_login">Login</string>
+    <string name="msg_personal_journa">Personal Journal </string>
+    <string name="lbl_create_account">Create account</string>
+</resources>
