@@ -3,7 +3,7 @@
 
 This is personal journal app made with help of firebase as backend
 
-You can add ,edit and delete ur journal in this app
+You can add ,edit and delete ur journal in this app<br>
 
 
 
