@@ -3,6 +3,8 @@
 
 This is personal journal app made with help of firebase as backend
 
+You can add ,edit and delete ur journal in this app
+
 
 
 <img src="https://github.com/shalenMathew/Personal-Journal-App/assets/119736953/8a73b3ca-5bf8-43f7-85e1-460046ff8e1b" alt="Splash_Screen" width="250" height="500">
