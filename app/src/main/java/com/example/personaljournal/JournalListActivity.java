@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,6 +15,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.personaljournal.Service.MusicService;
 import com.example.personaljournal.adapter.JournalAdapter;
 import com.example.personaljournal.model.Journal;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -55,6 +57,11 @@ final int ACTION_ADD_ID = R.id.actionAdd;
     RecyclerView recyclerView;
     JournalAdapter journalAdapter;
 
+
+//    MediaPlayer music;
+    boolean isPlaying = true;
+    MenuItem playMenuItem;
+
 private final CollectionReference collectionReference = firestore.collection("Journal");
 
 TextView noPost;
@@ -86,6 +93,11 @@ TextView noPost;
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
 
+
+        // making a service class, this is  more plausible as u can play music in background even when ur switching activities
+        Intent musicIntent= new Intent(this, MusicService.class);
+        startService(musicIntent);
+
     }
 
 
@@ -95,6 +107,7 @@ TextView noPost;
     public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.menu,menu);
+        playMenuItem= menu.findItem(R.id.play);
         return  true;
     }
 
@@ -114,11 +127,35 @@ TextView noPost;
 
             if(firebaseUser!=null && firebaseAuth!=null) {
                 firebaseAuth.signOut();
-                startActivity(new Intent(JournalListActivity.this, MainActivity.class));
+                Intent i = new Intent(JournalListActivity.this, MainActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);  // // makes sure all activity is removed from stack
+                startActivity(i);
             }
+        }else if (itemId==R.id.play) {
+
+            isPlaying= !isPlaying;  // changes the boolean value when clicked
+            updatePlayIcon();
+
+
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void updatePlayIcon() {
+
+        if(isPlaying){
+            playMenuItem.setIcon(R.drawable.pause);
+            Intent musicIntent= new Intent(this, MusicService.class);
+            startService(musicIntent);
+
+        }else {
+            playMenuItem.setIcon(R.drawable.play);
+            Intent musicIntent= new Intent(this, MusicService.class);
+            stopService(musicIntent);
+
+        }
+
     }
 
 
@@ -170,5 +207,13 @@ TextView noPost;
                     }
                 });
 
+    }
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Intent musicIntent= new Intent(this, MusicService.class);
+        stopService(musicIntent);
     }
 }

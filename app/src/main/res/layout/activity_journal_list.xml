@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/app_name"
                android:fontFamily="@font/opensansromanlight"
-                android:textSize="@dimen/_30pxh"
+                android:textSize="@dimen/_25pxh"
                 android:textColor="@color/black_900"
                 android:id="@+id/toolbarText"
                 />

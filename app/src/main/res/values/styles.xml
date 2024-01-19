@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
+
+
     <style name="btnSolidRounded">
         <item name="android:textSize">@dimen/_20pxh</item>
         <item name="android:textColor">@color/white_A700</item>

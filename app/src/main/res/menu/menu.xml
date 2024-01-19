@@ -2,6 +2,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+
+    <item
+        android:id="@+id/play"
+        android:title="Play"
+        android:icon="@drawable/play"
+        app:showAsAction="ifRoom"
+        />
+
+
     <item
         android:id="@+id/actionAdd"
         android:title="Add Journal"
@@ -10,13 +20,12 @@
 
         />
 
-
     <item
-
         android:id="@+id/SignOut"
         android:title="Sign out"
         app:showAsAction="never"
-
         />
+
+
 
 </menu>

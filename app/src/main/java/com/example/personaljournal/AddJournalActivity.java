@@ -156,6 +156,21 @@ CollectionReference collectionReference = firestore.collection("Journal");
     }
 
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode==GALLERY_CODE && resultCode==RESULT_OK){
+            if(data!=null){
+                imageUri=data.getData();
+                imageViewAdd.setImageURI(imageUri);
+            }
+
+        }
+
+    }
+
+
     private void retrieveExistingData(String documentId) {
 
         collectionReference.document(documentId).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -402,19 +417,7 @@ CollectionReference collectionReference = firestore.collection("Journal");
     }
 
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
 
-        if(requestCode==GALLERY_CODE && resultCode==RESULT_OK){
-            if(data!=null){
-                imageUri=data.getData();
-                imageViewAdd.setImageURI(imageUri);
-            }
-
-        }
-
-    }
 
     @Override
     protected void onStart() {

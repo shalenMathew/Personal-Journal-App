@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp"
         tools:targetApi="31">
+        <service android:name=".Service.MusicService"/>
         <activity
             android:name=".ForgotPasswordActivity"
             android:exported="false" />
