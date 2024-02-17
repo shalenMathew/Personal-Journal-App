@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -68,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
 
     TextView forgotPassword;
 
+    ProgressBar progressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,9 +83,9 @@ public class MainActivity extends AppCompatActivity {
         loginBtn = findViewById(R.id.loginBtn);
 
         forgotPassword=findViewById(R.id.forgotPasswordTxtView);
+        progressBar=findViewById(R.id.progressBarLogin);
 
-
-
+        progressBar.setVisibility(View.GONE);
 
         forgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,13 +114,10 @@ public class MainActivity extends AppCompatActivity {
  loginBtn.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-
+        progressBar.setVisibility(View.VISIBLE);
         LoginEmailAndPasswordUser(emailET.getText().toString().trim(),passwordET.getText().toString().trim());
-
     }
 });
-
-
     }
 
     private void LoginEmailAndPasswordUser(String email, String password) {
@@ -156,7 +156,7 @@ if (!TextUtils.isEmpty(email)  && !TextUtils.isEmpty(password)){
                                                 journalUser.setUserId(snapshot.getString("userId"));
 
                                             }
-
+                                            progressBar.setVisibility(View.GONE);
                                             startActivity(new Intent(MainActivity.this, JournalListActivity.class));
 
                                         }

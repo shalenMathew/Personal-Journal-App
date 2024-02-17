@@ -5,7 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddJournalActivity">
+    tools:context=".AddJournalActivity"
+    android:background="@color/white"
+    >
 
 
     <ImageView
@@ -70,6 +72,8 @@
     </androidx.cardview.widget.CardView>
 
     <EditText
+        android:textColorHint="@color/gray_400"
+        android:textColor="@color/black"
         android:id="@+id/titleAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -88,6 +92,8 @@
 
 
     <EditText
+        android:textColorHint="@color/gray_400"
+        android:textColor="@color/black"
         android:id="@+id/thoughtsAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

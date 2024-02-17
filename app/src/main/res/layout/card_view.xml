@@ -5,7 +5,9 @@
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
     app:cardCornerRadius="20dp"
-    android:layout_margin="15dp"
+    android:layout_marginStart="@dimen/_12pxh"
+    android:layout_marginEnd="@dimen/_12pxh"
+    android:layout_marginTop="@dimen/_12pxh"
     >
 
 
@@ -90,7 +92,7 @@
             android:layout_marginEnd="@dimen/_23pxh"
             android:layout_marginStart="@dimen/_23pxh"
             android:layout_marginTop="@dimen/_30pxv"
-            android:layout_marginBottom="@dimen/_8pxh"
+            android:layout_marginBottom="@dimen/_10pxh"
             android:layout_width="wrap_content"
             android:singleLine="true"
             android:text="Yesterday"
