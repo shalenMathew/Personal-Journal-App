@@ -1,5 +1,6 @@
 # Personal-Journal-App ✍️
 
+![App Screenshot](https://github.com/shalenMathew/MovieFlix_App/blob/master/images/MoviFlix%20Banner%202.png)
 
 This is personal journal app made with help of firebase as backend
 
