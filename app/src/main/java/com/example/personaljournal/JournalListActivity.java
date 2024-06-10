@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
@@ -39,7 +40,6 @@ public class JournalListActivity extends AppCompatActivity {
 
 final int ACTION_ADD_ID = R.id.actionAdd;
 
-
 // firebaseAuth
     FirebaseAuth firebaseAuth;
     FirebaseAuth.AuthStateListener authStateListener;
@@ -61,6 +61,7 @@ final int ACTION_ADD_ID = R.id.actionAdd;
 //    MediaPlayer music;
     boolean isPlaying = true;
     MenuItem playMenuItem;
+
 
 private final CollectionReference collectionReference = firestore.collection("Journal");
 
@@ -85,15 +86,10 @@ TextView noPost;
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-
-
-
         // toolbar setup
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
-
-
         // making a service class, this is  more plausible as u can play music in background even when ur switching activities
         Intent musicIntent= new Intent(this, MusicService.class);
         startService(musicIntent);

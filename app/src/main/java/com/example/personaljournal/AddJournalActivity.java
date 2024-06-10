@@ -260,7 +260,9 @@ CollectionReference collectionReference = firestore.collection("Journal");
 
                                                                                     Toast.makeText(AddJournalActivity.this, "Journal Updated successfully", Toast.LENGTH_SHORT).show();
                                                                                     progressBarAdd.setVisibility(View.INVISIBLE);
-                                                                                    startActivity(new Intent(AddJournalActivity.this, JournalListActivity.class ));
+                                                                                    Intent intent = new Intent(AddJournalActivity.this, JournalListActivity.class );
+                                                                                    intent.addFlags( Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                                                                    startActivity(intent);
                                                                                     finish();
 
                                                                                 }
@@ -315,9 +317,11 @@ CollectionReference collectionReference = firestore.collection("Journal");
                             }else{
 
                               progressBarAdd.setVisibility(View.INVISIBLE);
-                                startActivity(new Intent(AddJournalActivity.this, JournalListActivity.class));
-                                Toast.makeText(AddJournalActivity.this, "Journal updates saved", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(AddJournalActivity.this, JournalListActivity.class );
+                                intent.addFlags( Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                startActivity(intent);
                                 finish();
+
                             }
 
 
@@ -326,7 +330,6 @@ CollectionReference collectionReference = firestore.collection("Journal");
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-
                             Toast.makeText(AddJournalActivity.this, "failed to update the data", Toast.LENGTH_SHORT).show();
                         }
                     });
@@ -385,10 +388,11 @@ CollectionReference collectionReference = firestore.collection("Journal");
                                 @Override
                                 public void onSuccess(DocumentReference documentReference) {
 
-                                    finish();
                                     progressBarAdd.setVisibility(View.INVISIBLE);
-                                    startActivity(new Intent(AddJournalActivity.this,JournalListActivity.class));
-
+                                    Intent intent = new Intent(AddJournalActivity.this, JournalListActivity.class );
+                                    intent.addFlags( Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(intent);
+                                    finish();
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
