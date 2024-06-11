@@ -91,8 +91,8 @@ TextView noPost;
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
         // making a service class, this is  more plausible as u can play music in background even when ur switching activities
-        Intent musicIntent= new Intent(this, MusicService.class);
-        startService(musicIntent);
+//        Intent musicIntent= new Intent(this, MusicService.class);
+//        startService(musicIntent);
 
     }
 
