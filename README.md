@@ -11,4 +11,14 @@
 - can give title and description
 - can edit them
 
+## Contribution 🤝
+If your new to contribution and want to practice contribution you can do it here or u can raise issue if you want to make any improvements
+[contribution guidelines](CONTRIBUTING.md)
 
+
+## Contact 📧
+Connect me using shalenmj@gmail.com
+
+Twitter - https://twitter.com/shalenMathew
+
+Linkedln - https://www.linkedin.com/in/shalen-mathew-3b566921b/
