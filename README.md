@@ -1,19 +1,24 @@
 # Personal-Journal-App ✍️
 
+![App Screenshot](https://github.com/shalenMathew/Personal-Journal-App/blob/master/gallery/pj.png)
 
-This is personal journal app made with help of firebase as backend
-
-You can add ,edit and delete ur journal in this app
-
+**Personal Journal is an app made using java and firebase as backend... Save best moments of ur life as a snapshot**
 
 
-<img src="https://github.com/shalenMathew/Personal-Journal-App/assets/119736953/8a73b3ca-5bf8-43f7-85e1-460046ff8e1b" alt="Splash_Screen" width="270" height="500">
+## Features ⚙️
 
-<img src="https://github.com/shalenMathew/Personal-Journal-App/assets/119736953/4640aba6-9e7a-4e58-a4f4-dd85656e315f" alt="Splash_Screen" width="270" height="500">
+- can add images of ur best moment of life
+- can give title and description
+- can edit them
 
-<img src="https://github.com/shalenMathew/Personal-Journal-App/assets/119736953/a28a8936-330b-48d6-8c99-5e28a4056caa" alt="Splash_Screen" width="270" height="500">
+## Contribution 🤝
+If your new to contribution and want to practice contribution you can do it here or u can raise issue if you want to make any improvements
+[contribution guidelines](CONTRIBUTING.md)
 
-<img src="https://github.com/shalenMathew/Personal-Journal-App/assets/119736953/a58538b8-ada6-40dd-adc4-433304369dc0" alt="Splash_Screen" width="270" height="500">
 
+## Contact 📧
+Connect me using shalenmj@gmail.com
 
+Twitter - https://twitter.com/shalenMathew
 
+Linkedln - https://www.linkedin.com/in/shalen-mathew-3b566921b/
