@@ -2,7 +2,7 @@
 
 ![App Screenshot](https://github.com/shalenMathew/Personal-Journal-App/blob/master/gallery/pj.png)
 
-**Personal Journal is an app made using java and firebase as backend... Save best moments of ur life as snapshot**
+**Personal Journal is an app made using java and firebase as backend... Save best moments of ur life as a snapshot**
 
 You can add ,edit and delete ur journal in this app
 
