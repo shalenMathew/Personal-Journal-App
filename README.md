@@ -4,6 +4,11 @@
 
 **Personal Journal is an app made using java and firebase as backend... Save best moments of ur life as a snapshot**
 
+Login Details:
+
+- email - sample@gmail.com
+- password - 123456
+
 
 ## Features ⚙️
 
